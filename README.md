@@ -2,7 +2,7 @@
 
 <svg width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<linearGradient id="geminiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
 <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1">
 <animate attributeName="stop-color" values="#4285F4; #9B72F2; #EA4335; #FBBC05; #34A853; #4285F4" dur="10s" repeatCount="indefinite"></animate>
 </stop>
@@ -10,10 +10,22 @@
 <animate attributeName="stop-color" values="#34A853; #4285F4; #9B72F2; #EA4335; #FBBC05; #34A853" dur="10s" repeatCount="indefinite"></animate>
 </stop>
 </linearGradient>
+<linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#FFFFFF" />
+<stop offset="40%" stop-color="#FFFFFF" />
+<stop offset="50%" stop-color="#F0F0F0" />
+<stop offset="60%" stop-color="#FFFFFF" />
+<stop offset="100%" stop-color="#FFFFFF" />
+<animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite" />
+<animate attributeName="x2" from="0%" to="200%" dur="4s" repeatCount="indefinite" />
+</linearGradient>
 </defs>
-<rect width="100%" height="100%" fill="url(#geminiGradient)" />
-<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="28" fill="#ffffff" font-weight="bold">
-Bilal Arif | Full-Stack Developer
+<rect width="100%" height="100%" fill="url(#backgroundGradient)" />
+<text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="50" fill="url(#textGradient)" font-weight="bold">
+Bilal Arif
+</text>
+<text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="28" fill="url(#textGradient)" font-weight="normal">
+Full-Stack Software Engineer
 </text>
 </svg>
 
@@ -57,21 +69,4 @@ I'm a Full-Stack Software Engineer with over four years of experience, skilled i
 <a href="your_website_url" target="_blank">
 <img src="https://img.shields.io/badge/Website-4A90E2?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
 </a>
-</div>
-
-🦖 Wanna Play a Game?
-<div align="center">
-
-<!-- Replace 'your_github_username' with your actual GitHub username -->
-
-<a href="https://github.com/your_github_username">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
-<img src="https://github-profile-trophy.vercel.app/?username=ryo-ma" />
-</a>
-<a href="https://github.com/your_github_username/github-profile-t-rex-game">
-<img src="https://github.com/your_github_username/github-profile-t-rex-game/blob/main/output/macchiato.gif?raw=true" alt="T-Rex Game">
-</a>
-
-Note: You'll need to set up the GitHub Profile T-Rex Game action on your own repository for the game to be interactive.
-
 </div>
